@@ -20,11 +20,11 @@ LORA_PATH = str(CHECKPOINT_DIR)
 pipe = None
 
 # UI configurations
-st.set_page_config(page_title="Interor and Architect Generator",
+st.set_page_config(page_title="Auraa",
                    page_icon=":bridge_at_night:",
                    layout="wide")
 icon.show_icon(":foggy:")
-st.markdown("# :rainbow[Interior and Architerct Generation]")
+st.markdown("# :rainbow[Auraa]")
 
 
 # Placeholders for images and gallery
@@ -128,4 +128,3 @@ def main():
 if __name__ == "__main__":
     
     main()
-
