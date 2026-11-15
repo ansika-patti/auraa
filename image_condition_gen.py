@@ -69,7 +69,7 @@ if __name__ == "__main__":
     pipe_controlnet = load_controlnet_model("checkpoints/Interior.pt",)
     prompt = "a living room with a TV, wooden floor, a sofa, a nice glass table and a flower in the table"
     negative_prompt = "(multiple outlets:1.9),carpets,(multiple tv screens:1.9),2 tables,lamps,lightbuble,(plants:1.6)bad-hands-5, ng_deepnegative_v1_75t, EasyNegative, bad_prompt_version2, bad-artist-anime, bad-artist, bad-image-v2-39000, verybadimagenegative_v1.3, text, close up, cropped, out of frame, worst quality, low quality, jpeg artifacts, ugly, duplicate, morbid, mutilated, extra fingers, mutated hands, poorly drawn hands, poorly drawn face, mutation, deformed, blurry, dehydrated, bad anatomy, bad proportions, extra limbs, cloned face, disfigured, gross proportions, malformed limbs, missing arms, missing legs, extra arms, extra legs, fused fingers, too many fingers, long neck"
-    image = Image.open("/home/ubuntu/old_code/trgtuan/Interior-stable-difusion/interior.jpg")
+    image = Image.open("/home/ubuntu/old_code/ansika/Interior-stable-difusion/interior.jpg")
     images = gen_controlnet(pipe_controlnet, prompt, trigger_words="", neg=negative_prompt, num_images=1, image=image)
     image = images[0]
     image.save("interior_control.jpg")
